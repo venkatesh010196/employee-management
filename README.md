@@ -17,7 +17,9 @@ Install the following in your local system.
 
 ### 1. Front-end(React)
 cd frontend/
+
 npm install
+
 npm start
 
 Open /demo/src/main/java/com/example/demo/config/WebConfig.java, and replace "http://localhost:3000" in allowedOrigins method call with the url of the front end app deployed and running in your local system.
