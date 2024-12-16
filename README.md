@@ -24,7 +24,7 @@ npm start
 
 Open demo/src/main/java/com/example/demo/config/WebConfig.java, and replace "http://localhost:3000" in allowedOrigins method call with the url of the front end app deployed and running in your local system.
 
-Update the "base url constant" in api.js with the with your spring application port no.
+Update the "base url constant" in /employee-mgmt/src/components/services/api.jswith the with your spring application port no.
 
 
 
