@@ -15,21 +15,23 @@ Install the following in your local system.
 ## How to Run the Application Locally
 
 
-### 1. Front-end(React)
-cd frontend/
+### Front-end(React)
+cd employee-mgmt/
 
 npm install
 
 npm start
 
-Open /demo/src/main/java/com/example/demo/config/WebConfig.java, and replace "http://localhost:3000" in allowedOrigins method call with the url of the front end app deployed and running in your local system.
+Open demo/src/main/java/com/example/demo/config/WebConfig.java, and replace "http://localhost:3000" in allowedOrigins method call with the url of the front end app deployed and running in your local system.
+
+Update the "base url constant" in api.js with the with your spring application port no.
 
 
 
 ### 2. Backend (Spring Boot)
 1. Open a terminal and navigate to the `backend/` directory:
    ```bash
-   cd backend/
+   cd demo/
 mvn clean install
 mvn spring-boot:run
 
