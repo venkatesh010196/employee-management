@@ -20,23 +20,9 @@ cd frontend/
 npm install
 npm start
 
-Open /demo/src/main/java/com/example/demo/config/WebConfig.java, and replace "http://localhost:3000" in allowedOrigins method call with the url of the front end app in your local system.
+Open /demo/src/main/java/com/example/demo/config/WebConfig.java, and replace "http://localhost:3000" in allowedOrigins method call with the url of the front end app deployed and running in your local system.
 
-public class WebConfig {
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000") // Allow requests from any origin
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Specify allowed HTTP methods
-                        .allowedHeaders("*") // Allow all headers
-                        .allowCredentials(true); // Allow credentials if needed
-            }
-        };
-    }
-}
+
 
 ### 2. Backend (Spring Boot)
 1. Open a terminal and navigate to the `backend/` directory:
